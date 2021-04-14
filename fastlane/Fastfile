@@ -50,7 +50,7 @@ after_all do |lane|
     if ENV['RESET_GIT_BRANCH'] == 'true'
       branch = ENV['BRANCH_TO_BUILD'] || 'master'
       package_id = ENV['MAIN_APP_IDENTIFIER'] || 'com.mattermost.rnbeta'
-      beta_dir = '../android/app/src/main/java/com/mattermost/rnbeta'
+      beta_dir = '../android/app/src/main/java/com/rossonet/rnbeta'
       release_dir = "../android/app/src/main/java/#{package_id.gsub '.', '/'}"
 
       if beta_dir != release_dir
@@ -632,7 +632,7 @@ platform :android do
       json['TelemetryApiKey'] = ENV['TELEMETRY_API_KEY']
       save_json_as_file('../dist/assets/config.json', json)
 
-      beta_dir = './android/app/src/main/java/com/mattermost/rnbeta/'
+      beta_dir = './android/app/src/main/java/com/rossonet/rnbeta/'
 
       # Listen to telemetry react markers
       find_replace_string(
@@ -671,7 +671,7 @@ platform :android do
       )
     end
 
-    beta_dir = './android/app/src/main/java/com/mattermost/rnbeta/'
+    beta_dir = './android/app/src/main/java/com/rossonet/rnbeta/'
     release_dir = "./android/app/src/main/java/#{package_id.gsub '.', '/'}/"
     if ENV['BUILD_FOR_RELEASE'] == 'true'
       find_replace_string(
