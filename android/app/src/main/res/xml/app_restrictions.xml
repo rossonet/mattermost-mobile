@@ -36,13 +36,13 @@
             android:title="@string/serverUrl_title"
             android:description="@string/serverUrl_description"
             android:restrictionType="string"
-            android:defaultValue="" />
+            android:defaultValue="https://mm.rossonet.net" />
     <restriction
             android:key="allowOtherServers"
             android:title="@string/allowOtherServers_title"
             android:description="@string/allowOtherServers_description"
             android:restrictionType="string"
-            android:defaultValue="true" />
+            android:defaultValue="false" />
     <restriction
             android:key="username"
             android:title="@string/username_title"
