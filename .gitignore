@@ -5,7 +5,7 @@ build-ios
 server.PID
 mattermost.keystore
 tmp/
-.env
+#.env
 env.d.ts
 
 # OSX
@@ -79,7 +79,7 @@ tags
 */fastlane/report.xml
 */fastlane/Preview.html
 */fastlane/screenshots
-fastlane/.env
+#fastlane/.env
 fastlane/report.xml
 
 # Sentry
