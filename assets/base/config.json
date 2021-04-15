@@ -1,6 +1,6 @@
 {
-    "DefaultServerUrl": "",
-    "TestServerUrl": "http://localhost:8065",
+    "DefaultServerUrl": "https://mm.rossonet.net",
+    "TestServerUrl": "https://mm.rossonet.net",
     "DefaultTheme": "default",
     "ShowErrorsList": false,
     "MinServerVersion": "4.0.0",
